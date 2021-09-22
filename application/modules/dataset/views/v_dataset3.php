@@ -49,7 +49,7 @@
               <div class="blog-wedget box-shadow">
                   <div class="blog-wedget-text">
                       <div class="blog-wedget-heading">
-                          <h2><a href="blog-detail.html">Data Kabupaten Banyuwangi</a></h2>
+                          <h2><a href="blog-detail.html">Dataset Kabupaten Banyuwangi</a></h2>
                       </div>
                       <div class="blog-wedget-author">
                           <div class="blog-author-view">
@@ -87,59 +87,70 @@
 </section>
 
 
+
+    <section id="blog-main-area" >
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 col-md-12 col-sm-12 col-12">
+                <div class="left-head-blog right-side">
+                    <div class="left-blog-page box-shadow check-heading2">
+                        <form action="#">
+                            <div class="blog-search-option">
+                                <input type="text" placeholder="Cari Data">
+                                <button class="button" type="submit"> <i class="fa fa-search"></i>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-12 col-sm-12 col-12">
+              <div class="left-head-blog right-side">
+                  <div class="left-blog-page box-shadow check-heading2">
+                <div class="form-group">
+                    <!-- <label for="city">State/City</label> -->
+                    <select class="form-control first_null" id="city">
+                        <option value="">Pilih Kategori</option>
+                        <option value="AX">Badan Pusat Statistik</option>
+                        <option value="AF">Sektoral</option>
+                        <option value="AF">Kecamatan</option>
+                    </select>
+                </div>
+              </div>
+            </div>
+            </div>
+            <div class="col-lg-3 col-md-12 col-sm-12 col-12">
+              <div class="left-head-blog right-side">
+                  <div class="left-blog-page box-shadow check-heading2">
+                <div class="form-group">
+                    <!-- <label for="zip">State/City</label> -->
+                    <select class="form-control first_null" id="city">
+                        <option value="">Urusan</option>
+                        <option value="AX">Pendidikan</option>
+                        <option value="AF">Kesehatan</option>
+                        <option value="AF">Kependudukan</option>
+                    </select>
+                </div>
+              </div>
+            </div>
+            </div>
+
+          </div>
+        </div>
+    </section>
+
+
     <section id="blog-main-area" >
         <div class="container">
             <div class="row">
-              <div class="col-lg-3 col-md-12 col-sm-12 col-12">
-                <div class="check-heading">
-                  <h4>Filter Data</h4>
-                </div>
-                  <div class="left-head-blog right-side">
-                      <div class="left-blog-page box-shadow">
-                          <form action="#">
-                              <div class="blog-search-option">
-                                  <input type="text" placeholder="Cari Data">
-                                  <button class="button" type="submit"> <i class="fa fa-search"></i>
-                                  </button>
-                              </div>
-                          </form>
-                      </div>
-                  </div>
-                  <div class="">
-                      <div class="">
-                    <div class="form-group">
-                        <!-- <label for="city">State/City</label> -->
-                        <select class="form-control first_null" id="city">
-                            <option value="">Pilih Kategori</option>
-                            <option value="AX">Badan Pusat Statistik</option>
-                            <option value="AF">Sektoral</option>
-                            <option value="AF">Kecamatan</option>
-                        </select>
-                    </div>
-                  </div>
-                </div>
-                <div class="">
-                    <div class="">
-                  <div class="form-group">
-                      <!-- <label for="zip">State/City</label> -->
-                      <select class="form-control first_null" id="city">
-                          <option value="">Urusan</option>
-                          <option value="AX">Pendidikan</option>
-                          <option value="AF">Kesehatan</option>
-                          <option value="AF">Kependudukan</option>
-                      </select>
-                  </div>
-                </div>
-              </div>
-              </div>
-              <div class="col-lg-9 col-md-12 col-sm-12 col-12">
+              <div class="col-lg-12 col-md-12 col-sm-12 col-12">
                     <div class="blog-wrapper-blog-item">
                         <div class="blog-wedget box-shadow">
 
                             <div class="blog-wedget-text">
 
                                 <div class="blog-wedget-heading">
-                                    <h4><a href="<?php echo base_url() ?>dataset/dtl_i">Angka Parsitipasi Kasar PAUD</a></h4>
+                                    <h3><a href="<?php echo base_url() ?>dataset/dtl_i">Angka Parsitipasi Kasar PAUD</a></h3>
                                 </div>
                                 <div class="blog-wedget-author">
                                     <div class="blog-author-view">
@@ -159,8 +170,34 @@
                                         </ul>
                                     </div>
                                 </div>
-
-
+                                <div class="table-desc">
+                                  <div class="cart-page table-responsive">
+                                      <table>
+                                          <thead>
+                                              <tr>
+                                                  <th class="product-remove">2016</th>
+                                                  <th class="product-thumb">2017</th>
+                                                  <th class="product-name">2018</th>
+                                                  <th class="product-price">2019</th>
+                                                  <th class="product-quantity">2020</th>
+                                                  <th class="product-total">Satuan</th>
+                                              </tr>
+                                          </thead>
+                                          <tbody>
+                                              <tr>
+                                                  <td>202</td>
+                                                  <td>204</td>
+                                                  <td>205</td>
+                                                  <td>206</td>
+                                                  <td>208</td>
+                                                  <td>Jumlah</td>
+                                              </tr>
+                                          </tbody>
+                                      </table>
+                                  </div>
+                        <div class="cart-submit">
+                            <button class="btn btn-theme btn-shop">Update Cart</button>
+                        </div>
                     </div>
 
                             </div>

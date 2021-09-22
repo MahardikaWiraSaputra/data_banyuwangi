@@ -116,7 +116,32 @@
                   <p>Dataset terkait topik Pendidikan ini dihasilkan oleh Dinas Pendidikan yang dikeluarkan dalam periode 1 tahun sekali.</p>
 									<p>
                     Angka Partisipasi kasar PAUD proporsi anak sekolah pada suatu jenjang pendidikan tertentu dalam kelompok umur yang sesuai dengan jenjang pendidikan tersebut. Semakin tinggi APK berarti semakin banyak anak usia sekolah yang bersekolah di suatu jenjang pendidikan pada suatu wilayah.</p>
-								</div>
+                    <div class="table-desc">
+                      <div class="cart-page table-responsive">
+                          <table>
+                              <thead>
+                                  <tr>
+                                      <th class="product-remove">2016</th>
+                                      <th class="product-thumb">2017</th>
+                                      <th class="product-name">2018</th>
+                                      <th class="product-price">2019</th>
+                                      <th class="product-quantity">2020</th>
+                                      <th class="product-total">Satuan</th>
+                                  </tr>
+                              </thead>
+                              <tbody>
+                                  <tr>
+                                      <td>202</td>
+                                      <td>204</td>
+                                      <td>205</td>
+                                      <td>206</td>
+                                      <td>208</td>
+                                      <td>Jumlah</td>
+                                  </tr>
+                              </tbody>
+                          </table>
+                      </div>
+              	</div>
 								<div id="review" class="tab-pane fade">
 									<div class="media-public ">
 										<ul>
