@@ -644,6 +644,8 @@ select:focus, textarea:focus {
     border-radius: 40px;
 }
 
+
+
 .btn-cta {
     background: #242f51;
     border-radius: 0;
@@ -4466,7 +4468,7 @@ Blog Page
 .blog-wedget-author {
     border-top: 1px solid #777c8742;
     border-bottom: 1px solid #777c8742;
-    padding: 10px 0;
+    padding: 5px 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -4482,7 +4484,7 @@ Blog Page
     font-size: 14px;
 }
 
-.blog-author-view ul li:nth-child(1) a {
+.blog-author-view ul li:nth-child(0) a {
     color: var(--main-theme-color);
 }
 
@@ -4505,6 +4507,7 @@ Blog Page
 
 .right-side {
     padding-left: 0px;
+    padding-top: 5px;
 }
 
 .blog-search-option {
@@ -5360,13 +5363,13 @@ Project-Details Page
 Project-Details Two Page
 -----------------------------*/
 .project-info-list li{
-    border-left: 4px solid #1351a8;
+    border-top: 4px solid #1351a8;
     box-shadow: 0 1px 4px 0 rgb(0 0 0 / 12%);
     display: flex;
-    padding: 15px 24px;
+    padding: 8px 10px;
     border-radius: 5px;
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
 }
 .project-info-list li img{
     width: 35px;
