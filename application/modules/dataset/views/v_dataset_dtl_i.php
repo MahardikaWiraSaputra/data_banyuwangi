@@ -101,11 +101,12 @@
 						<div class="product-details-tabs-review box-shadow">
 							<div class="tab-content">
 								<div id="data" class="tab-pane active">
+                
 									<!-- <h3>Deskripsi Data</h3> -->
-                  <p>Dataset ini berisi data Angka Partisipasi kasar PAUD Kabupaten Banyuwangi dari tahun 2016 s.d. 2020.</p>
+                  <!-- <p>Dataset ini berisi data Angka Partisipasi kasar PAUD Kabupaten Banyuwangi dari tahun 2016 s.d. 2020.</p>
                   <p>Dataset terkait topik Pendidikan ini dihasilkan oleh Dinas Pendidikan yang dikeluarkan dalam periode 1 tahun sekali.</p>
 									<p>
-                    Angka Partisipasi kasar PAUD proporsi anak sekolah pada suatu jenjang pendidikan tertentu dalam kelompok umur yang sesuai dengan jenjang pendidikan tersebut. Semakin tinggi APK berarti semakin banyak anak usia sekolah yang bersekolah di suatu jenjang pendidikan pada suatu wilayah.</p><br>
+                    Angka Partisipasi kasar PAUD proporsi anak sekolah pada suatu jenjang pendidikan tertentu dalam kelompok umur yang sesuai dengan jenjang pendidikan tersebut. Semakin tinggi APK berarti semakin banyak anak usia sekolah yang bersekolah di suatu jenjang pendidikan pada suatu wilayah.</p><br> -->
                     <div class="table-desc">
                       <div class="cart-page table-responsive">
                           <table>
@@ -132,7 +133,8 @@
                           </table>
                       </div>
                     </div>
-                </div>
+                </div><br>
+
 								<div id="metadata" class="tab-pane">
 									<div class="media-public ">
 										<ul>

@@ -22,7 +22,7 @@
             <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
                 <ul class="navbar-nav">
                     <li class="nav-item"><a href="<?php echo base_url()?>b_data" class="nav-link">Home</a></li>
-                    <li class="nav-item"><a href="<?php echo base_url()?>dataset" class="nav-link">Dataset</a></li>
+                    <li class="nav-item"><a href="<?php echo base_url()?>dataset" class="nav-link">Data</a></li>
                     <!-- <li class="nav-item"> <a href="#!" class="nav-link">Dataset<i class="fas fa-chevron-down"></i></a>
                         <ul class="dropdown-menu">
                             <li class="nav-item"><a href="service.html" class="nav-link">BPS</a></li>
@@ -89,8 +89,9 @@
 
     <section id="blog-main-area" >
         <div class="container">
+
             <div class="row">
-              <div class="col-lg-3 col-md-12 col-sm-12 col-12">
+              <div class="col-lg-6 col-md-12 col-sm-12 col-12">
                 <div class="check-heading">
                   <h4>Filter Data</h4>
                 </div>
@@ -132,7 +133,8 @@
                 </div>
               </div>
               </div>
-              <div class="col-lg-9 col-md-12 col-sm-12 col-12">
+
+              <div class="col-lg-12 col-md-12 col-sm-12 col-12">
                     <div class="blog-wrapper-blog-item">
                         <div class="blog-wedget box-shadow">
 
@@ -141,6 +143,7 @@
                                 <div class="blog-wedget-heading">
                                     <h4><a href="<?php echo base_url() ?>dataset/dtl_i">Angka Parsitipasi Kasar PAUD</a></h4>
                                 </div>
+
                                 <div class="blog-wedget-author">
                                     <div class="blog-author-view">
                                         <ul>
@@ -155,6 +158,7 @@
                                     </div>
                                     <div class="blog-author-date">
                                         <ul>
+
                                             <li> 14 Maret 2020</li>
                                         </ul>
                                     </div>
@@ -303,6 +307,7 @@
                         <!-- pagination end -->
                     </div>
                 </div>
+
             </div>
         </div>
     </section>

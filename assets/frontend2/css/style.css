@@ -2080,7 +2080,7 @@ button:focus {
 }
 
 .fooote-heading h5 {
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     font-weight: 500;
     position: relative;
 }
