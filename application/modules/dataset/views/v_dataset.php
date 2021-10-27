@@ -285,7 +285,6 @@
                 		</div>
                 	</div>
                 	<!-- pagination end -->
-
         </div>
     </section>
 
