@@ -48,11 +48,10 @@
           <div class="blog-wrapper-blog-item" >
               <div class="blog-wedget box-shadow">
                   <div class="blog-wedget-text">
-                      <div class="blog-wedget-heading">
+                      <div class="blog-wedget-heading text-center">
                           <h2><a href="blog-detail.html">Data Kabupaten Banyuwangi</a></h2>
                       </div>
-                      <div class="blog-wedget-author">
-
+                      <!-- <div class="blog-wedget-author">
                           <div class="blog-author-view">
                             <div class="project-details-sidebar">
                                 <ul class="project-info-list">
@@ -74,26 +73,15 @@
                                 </ul>
                             </div>
                           </div>
-                          <div class="blog-author-date">
-                              <ul>
-                                <!-- <li><a href="#!"><i class="icofont-eye-alt"></i> 68</a>
-                                </li> -->
-
-                              </ul>
-                          </div>
-                      </div>
-                      <div class="blog-wedget-paragraph">
+                      </div> -->
+                      <div class="text-center">
                           <p>kumpulan data Dalam kasus data tabular, kumpulan data sesuai dengan satu atau beberapa tabel database, di mana setiap kolom tabel mewakili variabel tertentu, dan setiap baris sesuai dengan rekaman tertentu dari kumpulan data yang dimaksud.
                           </p>
                       </div>
                   </div><br>
-
               </div>
-
           </div>
-
       </div>
-
     </div>
   </div>
 </section>
@@ -110,11 +98,11 @@
               		<div class="box-shadow">
               			<div class="form-group">
               				<!-- <label for="city">State/City</label> -->
-              				<select class="form-control first_null" id="city">
+              				<select class="form-control first_null" name="kategori" id="kategori">
               					<option value="">Kategori</option>
-              					<option value="AX">Badan Pusat Statistik</option>
-              					<option value="AF">Sektoral</option>
-              					<option value="AF">Kecamatan</option>
+                        <?php foreach ($nama_kategori as $value): ?>
+                            <option value="<?php echo $value["ID"]; ?>"><?php echo $value["KATEGORI"]; ?></option>
+                        <?php endforeach; ?>
               				</select>
               			</div>
               		</div>
@@ -128,11 +116,11 @@
             		<div class="box-shadow">
             			<div class="form-group">
             				<!-- <label for="zip">State/City</label> -->
-            				<select class="form-control first_null" id="city">
+            				<select class="form-control first_null" name="urusan" id="urusan">
             					<option value="">Urusan</option>
-            					<option value="AX">Pendidikan</option>
-            					<option value="AF">Kesehatan</option>
-            					<option value="AF">Kependudukan</option>
+                      <?php foreach ($nama_urusan as $value): ?>
+                          <option value="<?php echo $value["ID"]; ?>"><?php echo $value["URUSAN"]; ?></option>
+                      <?php endforeach; ?>
             				</select>
             			</div>
             		</div>
@@ -148,26 +136,68 @@
                             <div class="input-group">
                                 <input type="text" class="form-control" placeholder="Cari Indikator">
                                 <div class="input-group-append">
-                                    <button class="btn btn-cta" type="button"><i class="fa fa-search"></i>
-                                        Cari Data
+                                    <button class="btn btn-cta" type="button">
+                                      <i class="fa fa-search"></i>
                                     </button>
                                 </div>
                             </div>
                         </div>
-                          <!-- <form action="#">
-                              <div class="blog-search-option">
-                                  <input type="text" placeholder="Cari Data">
-                                  <button class="button" type="submit"> <i class="fa fa-search"></i>
-                                  </button>
-                              </div>
-                          </form> -->
                       </div>
                   </div>
                 </div>
             </div>
 
+            <div class="blog-wedget-author2">
+              <div class="blog-author-view">
+                <ul>
+                  <li>
+                    <button class="btn btn-cta" type="button"><?php echo count($indikator); ?> data ditemukan</button>
+                  </li>
+                </ul>
+              </div>
+              <div class="blog-author-date">
+                <ul>
+                  <select class="form-control first_null" id="city">
+                    <option value="">Urutkan </option>
+                    <option value="AX">Abjad</option>
+                    <option value="AF">Terbaru</option>
+                    <option value="AF">Terpopuler</option>
+                  </select>
+                </ul>
+              </div>
+            </div><br>
 
-                	<div class="blog-wedget box-shadow">
+
+                    <?php foreach ($indikator as $value): ?>
+                      <div class="core-area-wrapper">
+                          <div class="core-area-item">
+                            <h4><a href="<?php echo base_url() ?>dataset/dtl_i"><?php echo $value['INDIKATOR']; ?></a></h4>
+                              <div class="blog-wedget-author">
+                                <div class="blog-author-view">
+                                  <ul style="padding-top: 5px;">
+                                    <li> <a href="#!"><i class="icofont-hard-disk"></i> <?php echo $value['KATEGORI']; ?></a>
+                                    </li>
+                                    <li> <a href="#!"><i class="icofont-book-alt"></i> <?php echo $value['URUSAN']; ?></a>
+                                    </li>
+                                    <li><a href="#!"><i class="icofont-building-alt"></i> <?php echo $value['NAMA_SKPD']; ?></a>
+                                    </li>
+                                    <li><a href="#!"><i class="icofont-eye-alt"></i> Dilihat 108</a>
+                                    </li>
+                                    <li><a href="#"><i class="icofont-calendar"></i> 14 juli 2020</a>
+                                    </li>
+                                  </ul>
+                                </div>
+                                <div class="blog-author-date">
+                                  <ul>
+                                      <button class="btn btn-theme btn-shop" data-toggle="modal" data-target="#exampleModalCenter">Preview Data</button>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+                        </div><br>
+                    <?php endforeach; ?>
+
+                	<!-- <div class="blog-wedget box-shadow">
                 			<div class="blog-wedget-text">
                 				<div class="blog-wedget-heading">
                           <div class="media-body">
@@ -198,8 +228,9 @@
                 					</div>
                 				</div>
                 			</div>
-                		</div>
-                	<div class="blog-wedget box-shadow">
+                		</div> -->
+
+                	<!-- <div class="blog-wedget box-shadow">
                   		<div class="blog-wedget-text">
                   			<div class="blog-wedget-heading">
                           <div class="media-body">
@@ -230,7 +261,7 @@
                   				</div>
                   			</div>
                      </div>
-                	</div>
+                	</div> -->
 
                 	<!-- pagination start -->
                 	<div class="blog-pagination d-flex justify-content-center text-center">
@@ -259,6 +290,8 @@
     </section>
 
 
+
+
     <!-- Modal -->
     <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered" role="document">
@@ -269,9 +302,9 @@
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
-          <div class="modal-body">
-            <div class="contact-wedget">
-                        <h3>Contact Us</h3>
+             <div class="modal-body">
+                <div class="contact-wedget">
+                    <h3>Contact Us</h3>
                         <ul>
                             <li>
                                 <i class="icofont-location-pin"></i> 205 Auburn Street, New York
@@ -283,8 +316,8 @@
                                 <i class="icofont-email"></i> <a href="#!">info@yourcompany.com</a>
                             </li>
                         </ul>
-                    </div>
-          </div>
+                  </div>
+              </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
             <button type="button" class="btn btn-primary">Save changes</button>
@@ -292,3 +325,9 @@
         </div>
       </div>
     </div>
+
+    <script type="text/javascript">
+      $(document).ready(function(){
+
+      });
+    </script>
